@@ -1,2 +1,4 @@
 node_modules
-*.png
+.env
+tmp/uploads/*
+!tmp/uploads/.gitkeep

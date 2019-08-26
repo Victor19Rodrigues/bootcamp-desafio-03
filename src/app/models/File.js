@@ -9,7 +9,7 @@ class File extends Model {
                 url: {
                     type: Sequelize.VIRTUAL, //this attribute does not exists in table, only here!
                     get() {
-                        return `http://localhost:3333/files/${this.path}`;
+                        return `${process.env.APP_URL}/files/${this.path}`;
                     }
                 }
             },
